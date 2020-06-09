@@ -1,0 +1,29 @@
+#Completed
+$l=<>;
+chomp($l);
+while($l>0)
+{
+$str=<>;
+chomp($str);
+@a=split("",$str);
+$len=length($str);
+$a=getc($str);
+$k=0;
+$m=0;
+while($len>0)
+{
+$b=$a[$k];
+if($a eq $b)
+{
+$m=$m+1;
+}
+else
+{
+$a=$b;
+}
+$k=$k+1;
+$len--;
+}
+print $m."\n";
+$l--;
+}
